@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Sp. Cabanillas Alevín</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: banda roja de club con franja verde diagonal (del escudo), y debajo una columna única de bloques tipo marcador */
+:root{
+  --red:#c8102e; --red-ink:#9e0c24; --green:#1f8a4c; --green-soft:#e6f3ec;
+  --bg:#f7f5f5; --surface:#ffffff; --fg:#1d1a1b; --muted:#6b6264; --line:#e7e1e2; --chip-bg:#f1eced;
+  --win:#1f8a4c; --draw:#b07d12; --loss:#c8102e; --on-red:#ffffff; --hl:#fdecef;
+  --font-display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --font-body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --red:#d6213e; --red-ink:#ff8a9b; --green:#3fb874; --green-soft:#16301f;
+  --bg:#141112; --surface:#1e1a1b; --fg:#f2eeee; --muted:#a69c9e; --line:#332c2e; --chip-bg:#2a2426;
+  --win:#3fb874; --draw:#e0b048; --loss:#ff6b81; --on-red:#ffffff; --hl:#3a1a20; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --red:#d6213e; --red-ink:#ff8a9b; --green:#3fb874; --green-soft:#16301f;
+  --bg:#141112; --surface:#1e1a1b; --fg:#f2eeee; --muted:#a69c9e; --line:#332c2e; --chip-bg:#2a2426;
+  --win:#3fb874; --draw:#e0b048; --loss:#ff6b81; --on-red:#ffffff; --hl:#3a1a20; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size:15px;line-height:1.45}
+*{box-sizing:border-box}
+.wrap{max-width:760px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header.band{background:var(--red);color:var(--on-red);position:relative;overflow:hidden}
+header.band::after{content:"";position:absolute;right:-60px;top:-40px;width:120px;height:320px;background:var(--green);transform:rotate(35deg);opacity:.9}
+header .wrap{position:relative;z-index:1;padding-block:22px 26px}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.9;font-weight:600}
+h1{font-family:var(--font-display);font-weight:800;font-size:clamp(34px,8vw,52px);line-height:1;margin:6px 0 4px;text-transform:uppercase;letter-spacing:.01em;text-wrap:balance}
+.sub{font-size:14px;opacity:.92}
+main .wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:26px;padding-block:22px 40px}
+main section{min-width:0}
+html,body{overflow-x:hidden}
+h2{font-family:var(--font-display);font-weight:700;font-size:24px;text-transform:uppercase;letter-spacing:.02em;margin:0 0 10px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+h2 small{font-family:var(--font-body);font-size:12px;font-weight:500;color:var(--muted);text-transform:none;letter-spacing:0}
+.next{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px;display:grid;gap:12px;border-top:4px solid var(--green)}
+.next .when{font-family:var(--font-display);font-size:22px;font-weight:700;text-transform:uppercase}
+.vs{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);overflow-wrap:anywhere;align-items:center;gap:10px;font-weight:600}
+.vs .r{text-align:right}
+.vs .x{font-family:var(--font-display);color:var(--muted);font-size:18px}
+.meta{color:var(--muted);font-size:13px}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:99px;background:var(--chip-bg);color:var(--fg)}
+.tag.home{background:var(--green-soft);color:var(--green)}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px}
+.stat b{display:block;font-family:var(--font-display);font-size:32px;line-height:1;font-variant-numeric:tabular-nums}
+.stat span{font-size:12px;color:var(--muted)}
+.form{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px;align-items:center}
+.form .lbl{font-size:12px;color:var(--muted);margin-right:4px}
+.res{width:28px;height:28px;border-radius:6px;display:grid;place-items:center;font-family:var(--font-display);font-weight:700;font-size:16px;color:#fff}
+.res.V{background:var(--win)} .res.E{background:var(--draw)} .res.D{background:var(--loss)}
+.tbl{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:14px}
+th,td{padding:9px 8px;text-align:center;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+td.team,th.team{text-align:left;white-space:normal;min-width:120px}
+tr:last-child td{border-bottom:0}
+tr.me td{background:var(--hl);font-weight:600}
+td.pos{font-family:var(--font-display);font-size:17px;font-weight:700;width:34px}
+td.pts{font-family:var(--font-display);font-size:18px;font-weight:700}
+.list{display:grid;gap:0;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.row{display:grid;grid-template-columns:54px 1fr auto;gap:10px;align-items:center;padding:10px 12px;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.row .d{font-size:12px;color:var(--muted);line-height:1.2}
+.row .d b{display:block;font-family:var(--font-display);font-size:16px;color:var(--fg)}
+.row .t{min-width:0;font-size:14px}
+.row .t .meta{font-size:12px}
+.score{font-family:var(--font-display);font-size:20px;font-weight:700;font-variant-numeric:tabular-nums;display:flex;align-items:center;gap:8px}
+.pend{font-size:12px;color:var(--muted)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.tabs button{font:inherit;font-size:13px;font-weight:600;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:8px;padding:6px 10px;cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:var(--on-red)}
+.tabs button:focus-visible,select:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+.jsel{display:flex;gap:10px;align-items:center;margin-bottom:10px;flex-wrap:wrap}
+select{font:inherit;padding:7px 10px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--fg)}
+.match{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);overflow-wrap:anywhere;gap:10px;align-items:center;padding:10px 12px;border-bottom:1px solid var(--line);font-size:14px}
+.match:last-child{border-bottom:0}
+.match .r{text-align:right}
+.match.me{background:var(--hl)}
+.match .sc{font-family:var(--font-display);font-weight:700;font-size:19px;min-width:56px;text-align:center;font-variant-numeric:tabular-nums}
+.match .sc.p{font-size:12px;font-family:var(--font-body);font-weight:500;color:var(--muted)}
+.notes{font-size:12px;color:var(--muted);display:grid;gap:4px}
+@media (max-width:520px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))} .hide-sm{display:none} th,td{padding:8px 5px} table{font-size:13px} .match{font-size:13px;gap:6px;padding:9px 10px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+
+<header class="band"><div class="wrap">
+  <div class="eyebrow">Interescuelas Alevín · Grupo 3 · 2026-27</div>
+  <h1>Sp. Cabanillas</h1>
+  <div class="sub" id="updated"></div>
+</div></header>
+
+<main><div class="wrap">
+  <section id="next-sec"><h2>Próximo partido</h2><div class="next" id="next"></div></section>
+
+  <section>
+    <h2>Así vamos</h2>
+    <div class="stats" id="stats"></div>
+    <div class="form" id="form"></div>
+  </section>
+
+  <section>
+    <h2>Clasificación <small>3 pts victoria · 1 empate</small></h2>
+    <div class="tbl"><table id="tabla"><thead><tr>
+      <th>#</th><th class="team">Equipo</th><th>PJ</th><th>G</th><th>E</th><th>P</th><th class="hide-sm">GF</th><th class="hide-sm">GC</th><th>DG</th><th>Pts</th>
+    </tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section>
+    <h2>Partidos del Cabanillas</h2>
+    <div class="tabs" role="group" aria-label="Filtrar partidos">
+      <button id="f-todos" aria-pressed="true" data-f="todos">Todos</button>
+      <button id="f-casa" aria-pressed="false" data-f="casa">En casa</button>
+      <button id="f-fuera" aria-pressed="false" data-f="fuera">Fuera</button>
+    </div>
+    <div class="list" id="partidos"></div>
+  </section>
+
+  <section>
+    <h2>Resultados por jornada</h2>
+    <div class="jsel"><label for="jornada">Jornada</label><select id="jornada"></select><span class="meta" id="jfecha"></span></div>
+    <div class="list" id="jornadaList"></div>
+  </section>
+
+  <section class="notes">
+    <div>Datos de la web de la Federación de Fútbol de Castilla-La Mancha. Desempate en la tabla: diferencia de goles y goles a favor; el reglamento oficial puede aplicar otros criterios.</div>
+    <div>Escuela de Fútbol Futbcuenca está retirada de la competición; sus partidos figuran con el resultado que publica la federación.</div>
+  </section>
+</div></main>
+
+<script>
+const ME="Sp. Cabanillas";
+const UPDATED="11 de noviembre de 2026 (hasta la jornada 4)";
+const DATA=[{"j": 1, "f": "2026-10-17", "l": "Academia Albiceleste", "v": "Dinamo Guadalajara", "gl": 4, "gv": 1}, {"j": 1, "f": "2026-10-18", "l": "Escuela de Fútbol Futbcuenca", "v": "E.M.F. Azuqueca de Henares \"A\"", "gl": 0, "gv": 1}, {"j": 1, "f": "2026-10-18", "l": "C.D. Ciudad Encantada", "v": "E.F. C.D. Salesianos", "gl": 2, "gv": 3}, {"j": 1, "f": "2026-10-18", "l": "E.F.B. Toledo", "v": "C.D. San José Obrero", "gl": 11, "gv": 3}, {"j": 1, "f": "2026-10-18", "l": "E.F.B. Jesús de la Ossa", "v": "E.F.B. Conquense", "gl": 0, "gv": 19}, {"j": 1, "f": "2026-10-17", "l": "C.D. Guadalajara", "v": "E.M.F. Alovera", "gl": 2, "gv": 2}, {"j": 1, "f": "2026-10-17", "l": "Sp. Cabanillas", "v": "C.D. Atlético Guadalajara", "gl": 3, "gv": 4}, {"j": 2, "f": "2026-10-24", "l": "Dinamo Guadalajara", "v": "Sp. Cabanillas", "gl": 2, "gv": 5}, {"j": 2, "f": "2026-10-24", "l": "E.M.F. Azuqueca de Henares \"A\"", "v": "Academia Albiceleste", "gl": 7, "gv": 2}, {"j": 2, "f": "2026-10-25", "l": "E.F. C.D. Salesianos", "v": "Escuela de Fútbol Futbcuenca", "gl": 1, "gv": 0}, {"j": 2, "f": "2026-10-25", "l": "C.D. San José Obrero", "v": "C.D. Ciudad Encantada", "gl": 1, "gv": 7}, {"j": 2, "f": "2026-10-25", "l": "E.F.B. Conquense", "v": "E.F.B. Toledo", "gl": 12, "gv": 1}, {"j": 2, "f": "2026-10-24", "l": "E.M.F. Alovera", "v": "E.F.B. Jesús de la Ossa", "gl": 4, "gv": 1}, {"j": 2, "f": "2026-10-24", "l": "C.D. Atlético Guadalajara", "v": "C.D. Guadalajara", "gl": 3, "gv": 2}, {"j": 3, "f": "2026-10-31", "l": "Dinamo Guadalajara", "v": "E.M.F. Azuqueca de Henares \"A\"", "gl": 1, "gv": 8}, {"j": 3, "f": "2026-10-31", "l": "Academia Albiceleste", "v": "E.F. C.D. Salesianos", "gl": 1, "gv": 0}, {"j": 3, "f": "2026-11-01", "l": "Escuela de Fútbol Futbcuenca", "v": "C.D. San José Obrero", "gl": 0, "gv": 1}, {"j": 3, "f": "2026-11-01", "l": "C.D. Ciudad Encantada", "v": "E.F.B. Conquense", "gl": 3, "gv": 9}, {"j": 3, "f": "2026-10-31", "l": "E.F.B. Toledo", "v": "E.M.F. Alovera", "gl": 4, "gv": 5}, {"j": 3, "f": "2026-11-01", "l": "E.F.B. Jesús de la Ossa", "v": "C.D. Atlético Guadalajara", "gl": 1, "gv": 7}, {"j": 3, "f": "2026-10-31", "l": "Sp. Cabanillas", "v": "C.D. Guadalajara", "gl": 3, "gv": 2}, {"j": 4, "f": "2026-11-07", "l": "E.M.F. Azuqueca de Henares \"A\"", "v": "Sp. Cabanillas", "gl": 8, "gv": 2}, {"j": 4, "f": "2026-11-06", "l": "E.F. C.D. Salesianos", "v": "Dinamo Guadalajara", "gl": 7, "gv": 6}, {"j": 4, "f": "2026-11-07", "l": "C.D. San José Obrero", "v": "Academia Albiceleste", "gl": 2, "gv": 8}, {"j": 4, "f": "2026-11-08", "l": "E.F.B. Conquense", "v": "Escuela de Fútbol Futbcuenca", "gl": 1, "gv": 0}, {"j": 4, "f": "2026-11-08", "l": "E.M.F. Alovera", "v": "C.D. Ciudad Encantada", "gl": 3, "gv": 1}, {"j": 4, "f": "2026-11-07", "l": "C.D. Atlético Guadalajara", "v": "E.F.B. Toledo", "gl": 7, "gv": 5}, {"j": 4, "f": "2026-11-07", "l": "C.D. Guadalajara", "v": "E.F.B. Jesús de la Ossa", "gl": 2, "gv": 1}, {"j": 5, "f": "2026-11-15", "l": "E.M.F. Azuqueca de Henares \"A\"", "v": "E.F. C.D. Salesianos", "gl": null, "gv": null}, {"j": 5, "f": "2026-11-15", "l": "Dinamo Guadalajara", "v": "C.D. San José Obrero", "gl": null, "gv": null}, {"j": 5, "f": "2026-11-15", "l": "Academia Albiceleste", "v": "E.F.B. Conquense", "gl": null, "gv": null}, {"j": 5, "f": "2026-11-15", "l": "Escuela de Fútbol Futbcuenca", "v": "E.M.F. Alovera", "gl": null, "gv": null}, {"j": 5, "f": "2026-11-15", "l": "C.D. Ciudad Encantada", "v": "C.D. Atlético Guadalajara", "gl": null, "gv": null}, {"j": 5, "f": "2026-11-15", "l": "E.F.B. Toledo", "v": "C.D. Guadalajara", "gl": null, "gv": null}, {"j": 5, "f": "2026-11-15", "l": "Sp. Cabanillas", "v": "E.F.B. Jesús de la Ossa", "gl": null, "gv": null}, {"j": 6, "f": "2026-11-22", "l": "E.F. C.D. Salesianos", "v": "Sp. Cabanillas", "gl": null, "gv": null}, {"j": 6, "f": "2026-11-22", "l": "C.D. San José Obrero", "v": "E.M.F. Azuqueca de Henares \"A\"", "gl": null, "gv": null}, {"j": 6, "f": "2026-11-22", "l": "E.F.B. Conquense", "v": "Dinamo Guadalajara", "gl": null, "gv": null}, {"j": 6, "f": "2026-11-22", "l": "E.M.F. Alovera", "v": "Academia Albiceleste", "gl": null, "gv": null}, {"j": 6, "f": "2026-11-22", "l": "C.D. Atlético Guadalajara", "v": "Escuela de Fútbol Futbcuenca", "gl": null, "gv": null}, {"j": 6, "f": "2026-11-22", "l": "C.D. Guadalajara", "v": "C.D. Ciudad Encantada", "gl": null, "gv": null}, {"j": 6, "f": "2026-11-22", "l": "E.F.B. Jesús de la Ossa", "v": "E.F.B. Toledo", "gl": null, "gv": null}, {"j": 7, "f": "2026-11-29", "l": "E.F. C.D. Salesianos", "v": "C.D. San José Obrero", "gl": null, "gv": null}, {"j": 7, "f": "2026-11-29", "l": "E.M.F. Azuqueca de Henares \"A\"", "v": "E.F.B. Conquense", "gl": null, "gv": null}, {"j": 7, "f": "2026-11-29", "l": "Dinamo Guadalajara", "v": "E.M.F. Alovera", "gl": null, "gv": null}, {"j": 7, "f": "2026-11-29", "l": "Academia Albiceleste", "v": "C.D. Atlético Guadalajara", "gl": null, "gv": null}, {"j": 7, "f": "2026-11-29", "l": "Escuela de Fútbol Futbcuenca", "v": "C.D. Guadalajara", "gl": null, "gv": null}, {"j": 7, "f": "2026-11-29", "l": "C.D. Ciudad Encantada", "v": "E.F.B. Jesús de la Ossa", "gl": null, "gv": null}, {"j": 7, "f": "2026-11-29", "l": "Sp. Cabanillas", "v": "E.F.B. Toledo", "gl": null, "gv": null}, {"j": 8, "f": "2026-12-06", "l": "C.D. San José Obrero", "v": "Sp. Cabanillas", "gl": null, "gv": null}, {"j": 8, "f": "2026-12-06", "l": "E.F.B. Conquense", "v": "E.F. C.D. Salesianos", "gl": null, "gv": null}, {"j": 8, "f": "2026-12-06", "l": "E.M.F. Alovera", "v": "E.M.F. Azuqueca de Henares \"A\"", "gl": null, "gv": null}, {"j": 8, "f": "2026-12-06", "l": "C.D. Atlético Guadalajara", "v": "Dinamo Guadalajara", "gl": null, "gv": null}, {"j": 8, "f": "2026-12-06", "l": "C.D. Guadalajara", "v": "Academia Albiceleste", "gl": null, "gv": null}, {"j": 8, "f": "2026-12-06", "l": "E.F.B. Jesús de la Ossa", "v": "Escuela de Fútbol Futbcuenca", "gl": null, "gv": null}, {"j": 8, "f": "2026-12-06", "l": "E.F.B. Toledo", "v": "C.D. Ciudad Encantada", "gl": null, "gv": null}, {"j": 9, "f": "2026-12-13", "l": "C.D. San José Obrero", "v": "E.F.B. Conquense", "gl": null, "gv": null}, {"j": 9, "f": "2026-12-13", "l": "E.F. C.D. Salesianos", "v": "E.M.F. Alovera", "gl": null, "gv": null}, {"j": 9, "f": "2026-12-13", "l": "E.M.F. Azuqueca de Henares \"A\"", "v": "C.D. Atlético Guadalajara", "gl": null, "gv": null}, {"j": 9, "f": "2026-12-13", "l": "Dinamo Guadalajara", "v": "C.D. Guadalajara", "gl": null, "gv": null}, {"j": 9, "f": "2026-12-13", "l": "Academia Albiceleste", "v": "E.F.B. Jesús de la Ossa", "gl": null, "gv": null}, {"j": 9, "f": "2026-12-13", "l": "Escuela de Fútbol Futbcuenca", "v": "E.F.B. Toledo", "gl": null, "gv": null}, {"j": 9, "f": "2026-12-13", "l": "Sp. Cabanillas", "v": "C.D. Ciudad Encantada", "gl": null, "gv": null}, {"j": 10, "f": "2026-12-20", "l": "E.F.B. Conquense", "v": "Sp. Cabanillas", "gl": null, "gv": null}, {"j": 10, "f": "2026-12-20", "l": "E.M.F. Alovera", "v": "C.D. San José Obrero", "gl": null, "gv": null}, {"j": 10, "f": "2026-12-20", "l": "C.D. Atlético Guadalajara", "v": "E.F. C.D. Salesianos", "gl": null, "gv": null}, {"j": 10, "f": "2026-12-20", "l": "C.D. Guadalajara", "v": "E.M.F. Azuqueca de Henares \"A\"", "gl": null, "gv": null}, {"j": 10, "f": "2026-12-20", "l": "E.F.B. Jesús de la Ossa", "v": "Dinamo Guadalajara", "gl": null, "gv": null}, {"j": 10, "f": "2026-12-20", "l": "E.F.B. Toledo", "v": "Academia Albiceleste", "gl": null, "gv": null}, {"j": 10, "f": "2026-12-20", "l": "C.D. Ciudad Encantada", "v": "Escuela de Fútbol Futbcuenca", "gl": null, "gv": null}, {"j": 11, "f": "2027-01-10", "l": "E.F.B. Conquense", "v": "E.M.F. Alovera", "gl": null, "gv": null}, {"j": 11, "f": "2027-01-10", "l": "C.D. San José Obrero", "v": "C.D. Atlético Guadalajara", "gl": null, "gv": null}, {"j": 11, "f": "2027-01-10", "l": "E.F. C.D. Salesianos", "v": "C.D. Guadalajara", "gl": null, "gv": null}, {"j": 11, "f": "2027-01-10", "l": "E.M.F. Azuqueca de Henares \"A\"", "v": "E.F.B. Jesús de la Ossa", "gl": null, "gv": null}, {"j": 11, "f": "2027-01-10", "l": "Dinamo Guadalajara", "v": "E.F.B. Toledo", "gl": null, "gv": null}, {"j": 11, "f": "2027-01-10", "l": "Academia Albiceleste", "v": "C.D. Ciudad Encantada", "gl": null, "gv": null}, {"j": 11, "f": "2027-01-10", "l": "Sp. Cabanillas", "v": "Escuela de Fútbol Futbcuenca", "gl": null, "gv": null}, {"j": 12, "f": "2027-01-17", "l": "Sp. Cabanillas", "v": "E.M.F. Alovera", "gl": null, "gv": null}, {"j": 12, "f": "2027-01-17", "l": "C.D. Atlético Guadalajara", "v": "E.F.B. Conquense", "gl": null, "gv": null}, {"j": 12, "f": "2027-01-17", "l": "C.D. Guadalajara", "v": "C.D. San José Obrero", "gl": null, "gv": null}, {"j": 12, "f": "2027-01-17", "l": "E.F.B. Jesús de la Ossa", "v": "E.F. C.D. Salesianos", "gl": null, "gv": null}, {"j": 12, "f": "2027-01-17", "l": "E.F.B. Toledo", "v": "E.M.F. Azuqueca de Henares \"A\"", "gl": null, "gv": null}, {"j": 12, "f": "2027-01-17", "l": "C.D. Ciudad Encantada", "v": "Dinamo Guadalajara", "gl": null, "gv": null}, {"j": 12, "f": "2027-01-17", "l": "Escuela de Fútbol Futbcuenca", "v": "Academia Albiceleste", "gl": null, "gv": null}, {"j": 13, "f": "2027-01-24", "l": "E.M.F. Alovera", "v": "C.D. Atlético Guadalajara", "gl": null, "gv": null}, {"j": 13, "f": "2027-01-24", "l": "E.F.B. Conquense", "v": "C.D. Guadalajara", "gl": null, "gv": null}, {"j": 13, "f": "2027-01-24", "l": "C.D. San José Obrero", "v": "E.F.B. Jesús de la Ossa", "gl": null, "gv": null}, {"j": 13, "f": "2027-01-24", "l": "E.F. C.D. Salesianos", "v": "E.F.B. Toledo", "gl": null, "gv": null}, {"j": 13, "f": "2027-01-24", "l": "E.M.F. Azuqueca de Henares \"A\"", "v": "C.D. Ciudad Encantada", "gl": null, "gv": null}, {"j": 13, "f": "2027-01-24", "l": "Dinamo Guadalajara", "v": "Escuela de Fútbol Futbcuenca", "gl": null, "gv": null}, {"j": 13, "f": "2027-01-24", "l": "Academia Albiceleste", "v": "Sp. Cabanillas", "gl": null, "gv": null}, {"j": 14, "f": "2027-01-31", "l": "Dinamo Guadalajara", "v": "Academia Albiceleste", "gl": null, "gv": null}, {"j": 14, "f": "2027-01-31", "l": "E.M.F. Azuqueca de Henares \"A\"", "v": "Escuela de Fútbol Futbcuenca", "gl": null, "gv": null}, {"j": 14, "f": "2027-01-31", "l": "E.F. C.D. Salesianos", "v": "C.D. Ciudad Encantada", "gl": null, "gv": null}, {"j": 14, "f": "2027-01-31", "l": "C.D. San José Obrero", "v": "E.F.B. Toledo", "gl": null, "gv": null}, {"j": 14, "f": "2027-01-31", "l": "E.F.B. Conquense", "v": "E.F.B. Jesús de la Ossa", "gl": null, "gv": null}, {"j": 14, "f": "2027-01-31", "l": "E.M.F. Alovera", "v": "C.D. Guadalajara", "gl": null, "gv": null}, {"j": 14, "f": "2027-01-31", "l": "C.D. Atlético Guadalajara", "v": "Sp. Cabanillas", "gl": null, "gv": null}, {"j": 15, "f": "2027-02-14", "l": "Sp. Cabanillas", "v": "Dinamo Guadalajara", "gl": null, "gv": null}, {"j": 15, "f": "2027-02-14", "l": "Academia Albiceleste", "v": "E.M.F. Azuqueca de Henares \"A\"", "gl": null, "gv": null}, {"j": 15, "f": "2027-02-14", "l": "Escuela de Fútbol Futbcuenca", "v": "E.F. C.D. Salesianos", "gl": null, "gv": null}, {"j": 15, "f": "2027-02-14", "l": "C.D. Ciudad Encantada", "v": "C.D. San José Obrero", "gl": null, "gv": null}, {"j": 15, "f": "2027-02-14", "l": "E.F.B. Toledo", "v": "E.F.B. Conquense", "gl": null, "gv": null}, {"j": 15, "f": "2027-02-14", "l": "E.F.B. Jesús de la Ossa", "v": "E.M.F. Alovera", "gl": null, "gv": null}, {"j": 15, "f": "2027-02-14", "l": "C.D. Guadalajara", "v": "C.D. Atlético Guadalajara", "gl": null, "gv": null}, {"j": 16, "f": "2027-02-21", "l": "E.M.F. Azuqueca de Henares \"A\"", "v": "Dinamo Guadalajara", "gl": null, "gv": null}, {"j": 16, "f": "2027-02-21", "l": "E.F. C.D. Salesianos", "v": "Academia Albiceleste", "gl": null, "gv": null}, {"j": 16, "f": "2027-02-21", "l": "C.D. San José Obrero", "v": "Escuela de Fútbol Futbcuenca", "gl": null, "gv": null}, {"j": 16, "f": "2027-02-21", "l": "E.F.B. Conquense", "v": "C.D. Ciudad Encantada", "gl": null, "gv": null}, {"j": 16, "f": "2027-02-21", "l": "E.M.F. Alovera", "v": "E.F.B. Toledo", "gl": null, "gv": null}, {"j": 16, "f": "2027-02-21", "l": "C.D. Atlético Guadalajara", "v": "E.F.B. Jesús de la Ossa", "gl": null, "gv": null}, {"j": 16, "f": "2027-02-21", "l": "C.D. Guadalajara", "v": "Sp. Cabanillas", "gl": null, "gv": null}, {"j": 17, "f": "2027-02-28", "l": "Sp. Cabanillas", "v": "E.M.F. Azuqueca de Henares \"A\"", "gl": null, "gv": null}, {"j": 17, "f": "2027-02-28", "l": "Dinamo Guadalajara", "v": "E.F. C.D. Salesianos", "gl": null, "gv": null}, {"j": 17, "f": "2027-02-28", "l": "Academia Albiceleste", "v": "C.D. San José Obrero", "gl": null, "gv": null}, {"j": 17, "f": "2027-02-28", "l": "Escuela de Fútbol Futbcuenca", "v": "E.F.B. Conquense", "gl": null, "gv": null}, {"j": 17, "f": "2027-02-28", "l": "C.D. Ciudad Encantada", "v": "E.M.F. Alovera", "gl": null, "gv": null}, {"j": 17, "f": "2027-02-28", "l": "E.F.B. Toledo", "v": "C.D. Atlético Guadalajara", "gl": null, "gv": null}, {"j": 17, "f": "2027-02-28", "l": "E.F.B. Jesús de la Ossa", "v": "C.D. Guadalajara", "gl": null, "gv": null}, {"j": 18, "f": "2027-03-07", "l": "E.F. C.D. Salesianos", "v": "E.M.F. Azuqueca de Henares \"A\"", "gl": null, "gv": null}, {"j": 18, "f": "2027-03-07", "l": "C.D. San José Obrero", "v": "Dinamo Guadalajara", "gl": null, "gv": null}, {"j": 18, "f": "2027-03-07", "l": "E.F.B. Conquense", "v": "Academia Albiceleste", "gl": null, "gv": null}, {"j": 18, "f": "2027-03-07", "l": "E.M.F. Alovera", "v": "Escuela de Fútbol Futbcuenca", "gl": null, "gv": null}, {"j": 18, "f": "2027-03-07", "l": "C.D. Atlético Guadalajara", "v": "C.D. Ciudad Encantada", "gl": null, "gv": null}, {"j": 18, "f": "2027-03-07", "l": "C.D. Guadalajara", "v": "E.F.B. Toledo", "gl": null, "gv": null}, {"j": 18, "f": "2027-03-07", "l": "E.F.B. Jesús de la Ossa", "v": "Sp. Cabanillas", "gl": null, "gv": null}, {"j": 19, "f": "2027-03-14", "l": "Sp. Cabanillas", "v": "E.F. C.D. Salesianos", "gl": null, "gv": null}, {"j": 19, "f": "2027-03-14", "l": "E.M.F. Azuqueca de Henares \"A\"", "v": "C.D. San José Obrero", "gl": null, "gv": null}, {"j": 19, "f": "2027-03-14", "l": "Dinamo Guadalajara", "v": "E.F.B. Conquense", "gl": null, "gv": null}, {"j": 19, "f": "2027-03-14", "l": "Academia Albiceleste", "v": "E.M.F. Alovera", "gl": null, "gv": null}, {"j": 19, "f": "2027-03-14", "l": "Escuela de Fútbol Futbcuenca", "v": "C.D. Atlético Guadalajara", "gl": null, "gv": null}, {"j": 19, "f": "2027-03-14", "l": "C.D. Ciudad Encantada", "v": "C.D. Guadalajara", "gl": null, "gv": null}, {"j": 19, "f": "2027-03-14", "l": "E.F.B. Toledo", "v": "E.F.B. Jesús de la Ossa", "gl": null, "gv": null}, {"j": 20, "f": "2027-03-21", "l": "C.D. San José Obrero", "v": "E.F. C.D. Salesianos", "gl": null, "gv": null}, {"j": 20, "f": "2027-03-21", "l": "E.F.B. Conquense", "v": "E.M.F. Azuqueca de Henares \"A\"", "gl": null, "gv": null}, {"j": 20, "f": "2027-03-21", "l": "E.M.F. Alovera", "v": "Dinamo Guadalajara", "gl": null, "gv": null}, {"j": 20, "f": "2027-03-21", "l": "C.D. Atlético Guadalajara", "v": "Academia Albiceleste", "gl": null, "gv": null}, {"j": 20, "f": "2027-03-21", "l": "C.D. Guadalajara", "v": "Escuela de Fútbol Futbcuenca", "gl": null, "gv": null}, {"j": 20, "f": "2027-03-21", "l": "E.F.B. Jesús de la Ossa", "v": "C.D. Ciudad Encantada", "gl": null, "gv": null}, {"j": 20, "f": "2027-03-21", "l": "E.F.B. Toledo", "v": "Sp. Cabanillas", "gl": null, "gv": null}, {"j": 21, "f": "2027-04-04", "l": "Sp. Cabanillas", "v": "C.D. San José Obrero", "gl": null, "gv": null}, {"j": 21, "f": "2027-04-04", "l": "E.F. C.D. Salesianos", "v": "E.F.B. Conquense", "gl": null, "gv": null}, {"j": 21, "f": "2027-04-04", "l": "E.M.F. Azuqueca de Henares \"A\"", "v": "E.M.F. Alovera", "gl": null, "gv": null}, {"j": 21, "f": "2027-04-04", "l": "Dinamo Guadalajara", "v": "C.D. Atlético Guadalajara", "gl": null, "gv": null}, {"j": 21, "f": "2027-04-04", "l": "Academia Albiceleste", "v": "C.D. Guadalajara", "gl": null, "gv": null}, {"j": 21, "f": "2027-04-04", "l": "Escuela de Fútbol Futbcuenca", "v": "E.F.B. Jesús de la Ossa", "gl": null, "gv": null}, {"j": 21, "f": "2027-04-04", "l": "C.D. Ciudad Encantada", "v": "E.F.B. Toledo", "gl": null, "gv": null}, {"j": 22, "f": "2027-04-11", "l": "E.F.B. Conquense", "v": "C.D. San José Obrero", "gl": null, "gv": null}, {"j": 22, "f": "2027-04-11", "l": "E.M.F. Alovera", "v": "E.F. C.D. Salesianos", "gl": null, "gv": null}, {"j": 22, "f": "2027-04-11", "l": "C.D. Atlético Guadalajara", "v": "E.M.F. Azuqueca de Henares \"A\"", "gl": null, "gv": null}, {"j": 22, "f": "2027-04-11", "l": "C.D. Guadalajara", "v": "Dinamo Guadalajara", "gl": null, "gv": null}, {"j": 22, "f": "2027-04-11", "l": "E.F.B. Jesús de la Ossa", "v": "Academia Albiceleste", "gl": null, "gv": null}, {"j": 22, "f": "2027-04-11", "l": "E.F.B. Toledo", "v": "Escuela de Fútbol Futbcuenca", "gl": null, "gv": null}, {"j": 22, "f": "2027-04-11", "l": "C.D. Ciudad Encantada", "v": "Sp. Cabanillas", "gl": null, "gv": null}, {"j": 23, "f": "2027-04-18", "l": "Sp. Cabanillas", "v": "E.F.B. Conquense", "gl": null, "gv": null}, {"j": 23, "f": "2027-04-18", "l": "C.D. San José Obrero", "v": "E.M.F. Alovera", "gl": null, "gv": null}, {"j": 23, "f": "2027-04-18", "l": "E.F. C.D. Salesianos", "v": "C.D. Atlético Guadalajara", "gl": null, "gv": null}, {"j": 23, "f": "2027-04-18", "l": "E.M.F. Azuqueca de Henares \"A\"", "v": "C.D. Guadalajara", "gl": null, "gv": null}, {"j": 23, "f": "2027-04-18", "l": "Dinamo Guadalajara", "v": "E.F.B. Jesús de la Ossa", "gl": null, "gv": null}, {"j": 23, "f": "2027-04-18", "l": "Academia Albiceleste", "v": "E.F.B. Toledo", "gl": null, "gv": null}, {"j": 23, "f": "2027-04-18", "l": "Escuela de Fútbol Futbcuenca", "v": "C.D. Ciudad Encantada", "gl": null, "gv": null}, {"j": 24, "f": "2027-04-25", "l": "E.M.F. Alovera", "v": "E.F.B. Conquense", "gl": null, "gv": null}, {"j": 24, "f": "2027-04-25", "l": "C.D. Atlético Guadalajara", "v": "C.D. San José Obrero", "gl": null, "gv": null}, {"j": 24, "f": "2027-04-25", "l": "C.D. Guadalajara", "v": "E.F. C.D. Salesianos", "gl": null, "gv": null}, {"j": 24, "f": "2027-04-25", "l": "E.F.B. Jesús de la Ossa", "v": "E.M.F. Azuqueca de Henares \"A\"", "gl": null, "gv": null}, {"j": 24, "f": "2027-04-25", "l": "E.F.B. Toledo", "v": "Dinamo Guadalajara", "gl": null, "gv": null}, {"j": 24, "f": "2027-04-25", "l": "C.D. Ciudad Encantada", "v": "Academia Albiceleste", "gl": null, "gv": null}, {"j": 24, "f": "2027-04-25", "l": "Escuela de Fútbol Futbcuenca", "v": "Sp. Cabanillas", "gl": null, "gv": null}, {"j": 25, "f": "2027-05-02", "l": "E.M.F. Alovera", "v": "Sp. Cabanillas", "gl": null, "gv": null}, {"j": 25, "f": "2027-05-02", "l": "E.F.B. Conquense", "v": "C.D. Atlético Guadalajara", "gl": null, "gv": null}, {"j": 25, "f": "2027-05-02", "l": "C.D. San José Obrero", "v": "C.D. Guadalajara", "gl": null, "gv": null}, {"j": 25, "f": "2027-05-02", "l": "E.F. C.D. Salesianos", "v": "E.F.B. Jesús de la Ossa", "gl": null, "gv": null}, {"j": 25, "f": "2027-05-02", "l": "E.M.F. Azuqueca de Henares \"A\"", "v": "E.F.B. Toledo", "gl": null, "gv": null}, {"j": 25, "f": "2027-05-02", "l": "Dinamo Guadalajara", "v": "C.D. Ciudad Encantada", "gl": null, "gv": null}, {"j": 25, "f": "2027-05-02", "l": "Academia Albiceleste", "v": "Escuela de Fútbol Futbcuenca", "gl": null, "gv": null}, {"j": 26, "f": "2027-05-09", "l": "C.D. Atlético Guadalajara", "v": "E.M.F. Alovera", "gl": null, "gv": null}, {"j": 26, "f": "2027-05-09", "l": "C.D. Guadalajara", "v": "E.F.B. Conquense", "gl": null, "gv": null}, {"j": 26, "f": "2027-05-09", "l": "E.F.B. Jesús de la Ossa", "v": "C.D. San José Obrero", "gl": null, "gv": null}, {"j": 26, "f": "2027-05-09", "l": "E.F.B. Toledo", "v": "E.F. C.D. Salesianos", "gl": null, "gv": null}, {"j": 26, "f": "2027-05-09", "l": "C.D. Ciudad Encantada", "v": "E.M.F. Azuqueca de Henares \"A\"", "gl": null, "gv": null}, {"j": 26, "f": "2027-05-09", "l": "Escuela de Fútbol Futbcuenca", "v": "Dinamo Guadalajara", "gl": null, "gv": null}, {"j": 26, "f": "2027-05-09", "l": "Sp. Cabanillas", "v": "Academia Albiceleste", "gl": null, "gv": null}];
+const EXTRA={"5":{h:"12:00",c:"San Blas (anexo 2), Cabanillas del Campo"},"6":{h:"",c:"Salesianos, Guadalajara"}};
+const MESES=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+const DIAS=["domingo","lunes","martes","miércoles","jueves","viernes","sábado"];
+const pd=s=>{const [y,m,d]=s.split("-").map(Number);return new Date(y,m-1,d)};
+const fShort=s=>{const d=pd(s);return {d:d.getDate(),m:MESES[d.getMonth()]}};
+const fLong=s=>{const d=pd(s);return `${DIAS[d.getDay()]} ${d.getDate()} ${MESES[d.getMonth()]}`};
+const played=m=>Number.isInteger(m.gl)&&Number.isInteger(m.gv);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+document.getElementById("updated").textContent="Actualizado el "+UPDATED;
+
+// Clasificación
+const teams={};
+DATA.forEach(m=>[m.l,m.v].forEach(t=>teams[t]??={t,pj:0,g:0,e:0,p:0,gf:0,gc:0}));
+DATA.filter(played).forEach(m=>{
+  const L=teams[m.l],V=teams[m.v];L.pj++;V.pj++;L.gf+=m.gl;L.gc+=m.gv;V.gf+=m.gv;V.gc+=m.gl;
+  if(m.gl>m.gv){L.g++;V.p++}else if(m.gl<m.gv){V.g++;L.p++}else{L.e++;V.e++}
+});
+const tabla=Object.values(teams).map(x=>({...x,dg:x.gf-x.gc,pts:x.g*3+x.e}))
+  .sort((a,b)=>b.pts-a.pts||b.dg-a.dg||b.gf-a.gf||a.t.localeCompare(b.t,"es"));
+document.querySelector("#tabla tbody").innerHTML=tabla.map((x,i)=>`<tr class="${x.t===ME?"me":""}"><td class="pos">${i+1}</td><td class="team">${esc(x.t)}</td><td>${x.pj}</td><td>${x.g}</td><td>${x.e}</td><td>${x.p}</td><td class="hide-sm">${x.gf}</td><td class="hide-sm">${x.gc}</td><td>${x.dg>0?"+":""}${x.dg}</td><td class="pts">${x.pts}</td></tr>`).join("");
+
+// Cabanillas
+const mine=DATA.filter(m=>m.l===ME||m.v===ME).sort((a,b)=>a.j-b.j);
+const res=m=>{const f=m.l===ME?m.gl:m.gv,c=m.l===ME?m.gv:m.gl;return f>c?"V":f<c?"D":"E"};
+const me=tabla.find(x=>x.t===ME),pos=tabla.indexOf(me)+1;
+document.getElementById("stats").innerHTML=[
+  [pos+"º","Posición"],[me.pts,"Puntos"],[`${me.g}-${me.e}-${me.p}`,"Ganados-empatados-perdidos"],[`${me.gf}:${me.gc}`,"Goles a favor : en contra"]
+].map(([v,l])=>`<div class="stat"><b>${v}</b><span>${l}</span></div>`).join("");
+const jug=mine.filter(played);
+document.getElementById("form").innerHTML=`<span class="lbl">Últimos resultados</span>`+jug.slice(-5).map(m=>{const r=res(m);return `<span class="res ${r}" title="Jornada ${m.j}: ${r==="V"?"victoria":r==="E"?"empate":"derrota"}">${r}</span>`}).join("");
+
+const nx=mine.find(m=>!played(m));
+if(nx){const casa=nx.l===ME,ex=EXTRA[nx.j]||{};
+  document.getElementById("next").innerHTML=`<div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center"><div class="when">${fLong(nx.f)}${ex.h?" · "+ex.h:""}</div><span class="tag ${casa?"home":""}">${casa?"En casa":"Fuera"} · Jornada ${nx.j}</span></div>
+  <div class="vs"><div>${esc(nx.l)}</div><div class="x">vs</div><div class="r">${esc(nx.v)}</div></div>
+  ${ex.c?`<div class="meta">Campo: ${esc(ex.c)}</div>`:`<div class="meta">Campo y hora por confirmar</div>`}`;
+}else document.getElementById("next-sec").hidden=true;
+
+let filtro="todos";
+function drawMine(){
+  const list=mine.filter(m=>filtro==="todos"||(filtro==="casa")===(m.l===ME));
+  document.getElementById("partidos").innerHTML=list.map(m=>{
+    const casa=m.l===ME,riv=casa?m.v:m.l,s=fShort(m.f);
+    let right;
+    if(played(m)){const r=res(m);right=`<div class="score">${m.gl}-${m.gv}<span class="res ${r}">${r}</span></div>`}
+    else right=`<span class="pend">${EXTRA[m.j]?.h||"Pendiente"}</span>`;
+    return `<div class="row"><div class="d"><b>${s.d} ${s.m}</b>J${m.j}</div><div class="t">${esc(riv)}<div class="meta">${casa?"En casa":"Fuera"}</div></div>${right}</div>`;
+  }).join("");
+}
+document.querySelectorAll(".tabs button").forEach(b=>b.addEventListener("click",()=>{
+  filtro=b.dataset.f;document.querySelectorAll(".tabs button").forEach(x=>x.setAttribute("aria-pressed",x===b));drawMine();
+  try{localStorage.setItem("filtro",filtro)}catch(e){}
+}));
+try{const f=localStorage.getItem("filtro");if(f){const b=document.querySelector(`.tabs button[data-f="${f}"]`);if(b){filtro=f;document.querySelectorAll(".tabs button").forEach(x=>x.setAttribute("aria-pressed",x===b))}}}catch(e){}
+drawMine();
+
+// Por jornada
+const sel=document.getElementById("jornada");
+const maxJ=Math.max(...DATA.map(m=>m.j));
+const lastPlayed=Math.max(0,...DATA.filter(played).map(m=>m.j));
+for(let j=1;j<=maxJ;j++){const o=document.createElement("option");o.value=j;o.textContent="Jornada "+j;sel.append(o)}
+sel.value=lastPlayed||1;
+function drawJ(){
+  const j=+sel.value,ms=DATA.filter(m=>m.j===j);
+  const fechas=[...new Set(ms.map(m=>m.f))].sort();
+  document.getElementById("jfecha").textContent=fechas.map(fLong).join(" / ");
+  document.getElementById("jornadaList").innerHTML=ms.map(m=>`<div class="match ${m.l===ME||m.v===ME?"me":""}"><div>${esc(m.l)}</div><div class="sc ${played(m)?"":"p"}">${played(m)?`${m.gl}-${m.gv}`:"vs"}</div><div class="r">${esc(m.v)}</div></div>`).join("");
+}
+sel.addEventListener("change",drawJ);drawJ();
+</script>
+
+</body>
+</html>
