@@ -1,0 +1,1472 @@
+{
+ "actualizado": "2026-11-11",
+ "hasta_jornada": 4,
+ "extra": {
+  "5": {
+   "h": "12:00",
+   "c": "San Blas (anexo 2), Cabanillas del Campo"
+  },
+  "6": {
+   "h": "",
+   "c": "Salesianos, Guadalajara"
+  }
+ },
+ "partidos": [
+  {
+   "j": 1,
+   "f": "2026-10-17",
+   "l": "Academia Albiceleste",
+   "v": "Dinamo Guadalajara",
+   "gl": 4,
+   "gv": 1
+  },
+  {
+   "j": 1,
+   "f": "2026-10-18",
+   "l": "Escuela de Fútbol Futbcuenca",
+   "v": "E.M.F. Azuqueca de Henares \"A\"",
+   "gl": 0,
+   "gv": 1
+  },
+  {
+   "j": 1,
+   "f": "2026-10-18",
+   "l": "C.D. Ciudad Encantada",
+   "v": "E.F. C.D. Salesianos",
+   "gl": 2,
+   "gv": 3
+  },
+  {
+   "j": 1,
+   "f": "2026-10-18",
+   "l": "E.F.B. Toledo",
+   "v": "C.D. San José Obrero",
+   "gl": 11,
+   "gv": 3
+  },
+  {
+   "j": 1,
+   "f": "2026-10-18",
+   "l": "E.F.B. Jesús de la Ossa",
+   "v": "E.F.B. Conquense",
+   "gl": 0,
+   "gv": 19
+  },
+  {
+   "j": 1,
+   "f": "2026-10-17",
+   "l": "C.D. Guadalajara",
+   "v": "E.M.F. Alovera",
+   "gl": 2,
+   "gv": 2
+  },
+  {
+   "j": 1,
+   "f": "2026-10-17",
+   "l": "Sp. Cabanillas",
+   "v": "C.D. Atlético Guadalajara",
+   "gl": 3,
+   "gv": 4
+  },
+  {
+   "j": 2,
+   "f": "2026-10-24",
+   "l": "Dinamo Guadalajara",
+   "v": "Sp. Cabanillas",
+   "gl": 2,
+   "gv": 5
+  },
+  {
+   "j": 2,
+   "f": "2026-10-24",
+   "l": "E.M.F. Azuqueca de Henares \"A\"",
+   "v": "Academia Albiceleste",
+   "gl": 7,
+   "gv": 2
+  },
+  {
+   "j": 2,
+   "f": "2026-10-25",
+   "l": "E.F. C.D. Salesianos",
+   "v": "Escuela de Fútbol Futbcuenca",
+   "gl": 1,
+   "gv": 0
+  },
+  {
+   "j": 2,
+   "f": "2026-10-25",
+   "l": "C.D. San José Obrero",
+   "v": "C.D. Ciudad Encantada",
+   "gl": 1,
+   "gv": 7
+  },
+  {
+   "j": 2,
+   "f": "2026-10-25",
+   "l": "E.F.B. Conquense",
+   "v": "E.F.B. Toledo",
+   "gl": 12,
+   "gv": 1
+  },
+  {
+   "j": 2,
+   "f": "2026-10-24",
+   "l": "E.M.F. Alovera",
+   "v": "E.F.B. Jesús de la Ossa",
+   "gl": 4,
+   "gv": 1
+  },
+  {
+   "j": 2,
+   "f": "2026-10-24",
+   "l": "C.D. Atlético Guadalajara",
+   "v": "C.D. Guadalajara",
+   "gl": 3,
+   "gv": 2
+  },
+  {
+   "j": 3,
+   "f": "2026-10-31",
+   "l": "Dinamo Guadalajara",
+   "v": "E.M.F. Azuqueca de Henares \"A\"",
+   "gl": 1,
+   "gv": 8
+  },
+  {
+   "j": 3,
+   "f": "2026-10-31",
+   "l": "Academia Albiceleste",
+   "v": "E.F. C.D. Salesianos",
+   "gl": 1,
+   "gv": 0
+  },
+  {
+   "j": 3,
+   "f": "2026-11-01",
+   "l": "Escuela de Fútbol Futbcuenca",
+   "v": "C.D. San José Obrero",
+   "gl": 0,
+   "gv": 1
+  },
+  {
+   "j": 3,
+   "f": "2026-11-01",
+   "l": "C.D. Ciudad Encantada",
+   "v": "E.F.B. Conquense",
+   "gl": 3,
+   "gv": 9
+  },
+  {
+   "j": 3,
+   "f": "2026-10-31",
+   "l": "E.F.B. Toledo",
+   "v": "E.M.F. Alovera",
+   "gl": 4,
+   "gv": 5
+  },
+  {
+   "j": 3,
+   "f": "2026-11-01",
+   "l": "E.F.B. Jesús de la Ossa",
+   "v": "C.D. Atlético Guadalajara",
+   "gl": 1,
+   "gv": 7
+  },
+  {
+   "j": 3,
+   "f": "2026-10-31",
+   "l": "Sp. Cabanillas",
+   "v": "C.D. Guadalajara",
+   "gl": 3,
+   "gv": 2
+  },
+  {
+   "j": 4,
+   "f": "2026-11-07",
+   "l": "E.M.F. Azuqueca de Henares \"A\"",
+   "v": "Sp. Cabanillas",
+   "gl": 8,
+   "gv": 2
+  },
+  {
+   "j": 4,
+   "f": "2026-11-06",
+   "l": "E.F. C.D. Salesianos",
+   "v": "Dinamo Guadalajara",
+   "gl": 7,
+   "gv": 6
+  },
+  {
+   "j": 4,
+   "f": "2026-11-07",
+   "l": "C.D. San José Obrero",
+   "v": "Academia Albiceleste",
+   "gl": 2,
+   "gv": 8
+  },
+  {
+   "j": 4,
+   "f": "2026-11-08",
+   "l": "E.F.B. Conquense",
+   "v": "Escuela de Fútbol Futbcuenca",
+   "gl": 1,
+   "gv": 0
+  },
+  {
+   "j": 4,
+   "f": "2026-11-08",
+   "l": "E.M.F. Alovera",
+   "v": "C.D. Ciudad Encantada",
+   "gl": 3,
+   "gv": 1
+  },
+  {
+   "j": 4,
+   "f": "2026-11-07",
+   "l": "C.D. Atlético Guadalajara",
+   "v": "E.F.B. Toledo",
+   "gl": 7,
+   "gv": 5
+  },
+  {
+   "j": 4,
+   "f": "2026-11-07",
+   "l": "C.D. Guadalajara",
+   "v": "E.F.B. Jesús de la Ossa",
+   "gl": 2,
+   "gv": 1
+  },
+  {
+   "j": 5,
+   "f": "2026-11-15",
+   "l": "E.M.F. Azuqueca de Henares \"A\"",
+   "v": "E.F. C.D. Salesianos",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 5,
+   "f": "2026-11-15",
+   "l": "Dinamo Guadalajara",
+   "v": "C.D. San José Obrero",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 5,
+   "f": "2026-11-15",
+   "l": "Academia Albiceleste",
+   "v": "E.F.B. Conquense",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 5,
+   "f": "2026-11-15",
+   "l": "Escuela de Fútbol Futbcuenca",
+   "v": "E.M.F. Alovera",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 5,
+   "f": "2026-11-15",
+   "l": "C.D. Ciudad Encantada",
+   "v": "C.D. Atlético Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 5,
+   "f": "2026-11-15",
+   "l": "E.F.B. Toledo",
+   "v": "C.D. Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 5,
+   "f": "2026-11-14",
+   "l": "Sp. Cabanillas",
+   "v": "E.F.B. Jesús de la Ossa",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 6,
+   "f": "2026-11-22",
+   "l": "E.F. C.D. Salesianos",
+   "v": "Sp. Cabanillas",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 6,
+   "f": "2026-11-22",
+   "l": "C.D. San José Obrero",
+   "v": "E.M.F. Azuqueca de Henares \"A\"",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 6,
+   "f": "2026-11-22",
+   "l": "E.F.B. Conquense",
+   "v": "Dinamo Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 6,
+   "f": "2026-11-22",
+   "l": "E.M.F. Alovera",
+   "v": "Academia Albiceleste",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 6,
+   "f": "2026-11-22",
+   "l": "C.D. Atlético Guadalajara",
+   "v": "Escuela de Fútbol Futbcuenca",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 6,
+   "f": "2026-11-22",
+   "l": "C.D. Guadalajara",
+   "v": "C.D. Ciudad Encantada",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 6,
+   "f": "2026-11-22",
+   "l": "E.F.B. Jesús de la Ossa",
+   "v": "E.F.B. Toledo",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 7,
+   "f": "2026-11-29",
+   "l": "E.F. C.D. Salesianos",
+   "v": "C.D. San José Obrero",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 7,
+   "f": "2026-11-29",
+   "l": "E.M.F. Azuqueca de Henares \"A\"",
+   "v": "E.F.B. Conquense",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 7,
+   "f": "2026-11-29",
+   "l": "Dinamo Guadalajara",
+   "v": "E.M.F. Alovera",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 7,
+   "f": "2026-11-29",
+   "l": "Academia Albiceleste",
+   "v": "C.D. Atlético Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 7,
+   "f": "2026-11-29",
+   "l": "Escuela de Fútbol Futbcuenca",
+   "v": "C.D. Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 7,
+   "f": "2026-11-29",
+   "l": "C.D. Ciudad Encantada",
+   "v": "E.F.B. Jesús de la Ossa",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 7,
+   "f": "2026-11-29",
+   "l": "Sp. Cabanillas",
+   "v": "E.F.B. Toledo",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 8,
+   "f": "2026-12-06",
+   "l": "C.D. San José Obrero",
+   "v": "Sp. Cabanillas",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 8,
+   "f": "2026-12-06",
+   "l": "E.F.B. Conquense",
+   "v": "E.F. C.D. Salesianos",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 8,
+   "f": "2026-12-06",
+   "l": "E.M.F. Alovera",
+   "v": "E.M.F. Azuqueca de Henares \"A\"",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 8,
+   "f": "2026-12-06",
+   "l": "C.D. Atlético Guadalajara",
+   "v": "Dinamo Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 8,
+   "f": "2026-12-06",
+   "l": "C.D. Guadalajara",
+   "v": "Academia Albiceleste",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 8,
+   "f": "2026-12-06",
+   "l": "E.F.B. Jesús de la Ossa",
+   "v": "Escuela de Fútbol Futbcuenca",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 8,
+   "f": "2026-12-06",
+   "l": "E.F.B. Toledo",
+   "v": "C.D. Ciudad Encantada",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 9,
+   "f": "2026-12-13",
+   "l": "C.D. San José Obrero",
+   "v": "E.F.B. Conquense",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 9,
+   "f": "2026-12-13",
+   "l": "E.F. C.D. Salesianos",
+   "v": "E.M.F. Alovera",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 9,
+   "f": "2026-12-13",
+   "l": "E.M.F. Azuqueca de Henares \"A\"",
+   "v": "C.D. Atlético Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 9,
+   "f": "2026-12-13",
+   "l": "Dinamo Guadalajara",
+   "v": "C.D. Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 9,
+   "f": "2026-12-13",
+   "l": "Academia Albiceleste",
+   "v": "E.F.B. Jesús de la Ossa",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 9,
+   "f": "2026-12-13",
+   "l": "Escuela de Fútbol Futbcuenca",
+   "v": "E.F.B. Toledo",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 9,
+   "f": "2026-12-13",
+   "l": "Sp. Cabanillas",
+   "v": "C.D. Ciudad Encantada",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 10,
+   "f": "2026-12-20",
+   "l": "E.F.B. Conquense",
+   "v": "Sp. Cabanillas",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 10,
+   "f": "2026-12-20",
+   "l": "E.M.F. Alovera",
+   "v": "C.D. San José Obrero",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 10,
+   "f": "2026-12-20",
+   "l": "C.D. Atlético Guadalajara",
+   "v": "E.F. C.D. Salesianos",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 10,
+   "f": "2026-12-20",
+   "l": "C.D. Guadalajara",
+   "v": "E.M.F. Azuqueca de Henares \"A\"",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 10,
+   "f": "2026-12-20",
+   "l": "E.F.B. Jesús de la Ossa",
+   "v": "Dinamo Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 10,
+   "f": "2026-12-20",
+   "l": "E.F.B. Toledo",
+   "v": "Academia Albiceleste",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 10,
+   "f": "2026-12-20",
+   "l": "C.D. Ciudad Encantada",
+   "v": "Escuela de Fútbol Futbcuenca",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 11,
+   "f": "2027-01-10",
+   "l": "E.F.B. Conquense",
+   "v": "E.M.F. Alovera",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 11,
+   "f": "2027-01-10",
+   "l": "C.D. San José Obrero",
+   "v": "C.D. Atlético Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 11,
+   "f": "2027-01-10",
+   "l": "E.F. C.D. Salesianos",
+   "v": "C.D. Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 11,
+   "f": "2027-01-10",
+   "l": "E.M.F. Azuqueca de Henares \"A\"",
+   "v": "E.F.B. Jesús de la Ossa",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 11,
+   "f": "2027-01-10",
+   "l": "Dinamo Guadalajara",
+   "v": "E.F.B. Toledo",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 11,
+   "f": "2027-01-10",
+   "l": "Academia Albiceleste",
+   "v": "C.D. Ciudad Encantada",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 11,
+   "f": "2027-01-10",
+   "l": "Sp. Cabanillas",
+   "v": "Escuela de Fútbol Futbcuenca",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 12,
+   "f": "2027-01-17",
+   "l": "Sp. Cabanillas",
+   "v": "E.M.F. Alovera",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 12,
+   "f": "2027-01-17",
+   "l": "C.D. Atlético Guadalajara",
+   "v": "E.F.B. Conquense",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 12,
+   "f": "2027-01-17",
+   "l": "C.D. Guadalajara",
+   "v": "C.D. San José Obrero",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 12,
+   "f": "2027-01-17",
+   "l": "E.F.B. Jesús de la Ossa",
+   "v": "E.F. C.D. Salesianos",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 12,
+   "f": "2027-01-17",
+   "l": "E.F.B. Toledo",
+   "v": "E.M.F. Azuqueca de Henares \"A\"",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 12,
+   "f": "2027-01-17",
+   "l": "C.D. Ciudad Encantada",
+   "v": "Dinamo Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 12,
+   "f": "2027-01-17",
+   "l": "Escuela de Fútbol Futbcuenca",
+   "v": "Academia Albiceleste",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 13,
+   "f": "2027-01-24",
+   "l": "E.M.F. Alovera",
+   "v": "C.D. Atlético Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 13,
+   "f": "2027-01-24",
+   "l": "E.F.B. Conquense",
+   "v": "C.D. Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 13,
+   "f": "2027-01-24",
+   "l": "C.D. San José Obrero",
+   "v": "E.F.B. Jesús de la Ossa",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 13,
+   "f": "2027-01-24",
+   "l": "E.F. C.D. Salesianos",
+   "v": "E.F.B. Toledo",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 13,
+   "f": "2027-01-24",
+   "l": "E.M.F. Azuqueca de Henares \"A\"",
+   "v": "C.D. Ciudad Encantada",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 13,
+   "f": "2027-01-24",
+   "l": "Dinamo Guadalajara",
+   "v": "Escuela de Fútbol Futbcuenca",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 13,
+   "f": "2027-01-24",
+   "l": "Academia Albiceleste",
+   "v": "Sp. Cabanillas",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 14,
+   "f": "2027-01-31",
+   "l": "Dinamo Guadalajara",
+   "v": "Academia Albiceleste",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 14,
+   "f": "2027-01-31",
+   "l": "E.M.F. Azuqueca de Henares \"A\"",
+   "v": "Escuela de Fútbol Futbcuenca",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 14,
+   "f": "2027-01-31",
+   "l": "E.F. C.D. Salesianos",
+   "v": "C.D. Ciudad Encantada",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 14,
+   "f": "2027-01-31",
+   "l": "C.D. San José Obrero",
+   "v": "E.F.B. Toledo",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 14,
+   "f": "2027-01-31",
+   "l": "E.F.B. Conquense",
+   "v": "E.F.B. Jesús de la Ossa",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 14,
+   "f": "2027-01-31",
+   "l": "E.M.F. Alovera",
+   "v": "C.D. Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 14,
+   "f": "2027-01-31",
+   "l": "C.D. Atlético Guadalajara",
+   "v": "Sp. Cabanillas",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 15,
+   "f": "2027-02-14",
+   "l": "Sp. Cabanillas",
+   "v": "Dinamo Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 15,
+   "f": "2027-02-14",
+   "l": "Academia Albiceleste",
+   "v": "E.M.F. Azuqueca de Henares \"A\"",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 15,
+   "f": "2027-02-14",
+   "l": "Escuela de Fútbol Futbcuenca",
+   "v": "E.F. C.D. Salesianos",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 15,
+   "f": "2027-02-14",
+   "l": "C.D. Ciudad Encantada",
+   "v": "C.D. San José Obrero",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 15,
+   "f": "2027-02-14",
+   "l": "E.F.B. Toledo",
+   "v": "E.F.B. Conquense",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 15,
+   "f": "2027-02-14",
+   "l": "E.F.B. Jesús de la Ossa",
+   "v": "E.M.F. Alovera",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 15,
+   "f": "2027-02-14",
+   "l": "C.D. Guadalajara",
+   "v": "C.D. Atlético Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 16,
+   "f": "2027-02-21",
+   "l": "E.M.F. Azuqueca de Henares \"A\"",
+   "v": "Dinamo Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 16,
+   "f": "2027-02-21",
+   "l": "E.F. C.D. Salesianos",
+   "v": "Academia Albiceleste",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 16,
+   "f": "2027-02-21",
+   "l": "C.D. San José Obrero",
+   "v": "Escuela de Fútbol Futbcuenca",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 16,
+   "f": "2027-02-21",
+   "l": "E.F.B. Conquense",
+   "v": "C.D. Ciudad Encantada",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 16,
+   "f": "2027-02-21",
+   "l": "E.M.F. Alovera",
+   "v": "E.F.B. Toledo",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 16,
+   "f": "2027-02-21",
+   "l": "C.D. Atlético Guadalajara",
+   "v": "E.F.B. Jesús de la Ossa",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 16,
+   "f": "2027-02-21",
+   "l": "C.D. Guadalajara",
+   "v": "Sp. Cabanillas",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 17,
+   "f": "2027-02-28",
+   "l": "Sp. Cabanillas",
+   "v": "E.M.F. Azuqueca de Henares \"A\"",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 17,
+   "f": "2027-02-28",
+   "l": "Dinamo Guadalajara",
+   "v": "E.F. C.D. Salesianos",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 17,
+   "f": "2027-02-28",
+   "l": "Academia Albiceleste",
+   "v": "C.D. San José Obrero",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 17,
+   "f": "2027-02-28",
+   "l": "Escuela de Fútbol Futbcuenca",
+   "v": "E.F.B. Conquense",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 17,
+   "f": "2027-02-28",
+   "l": "C.D. Ciudad Encantada",
+   "v": "E.M.F. Alovera",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 17,
+   "f": "2027-02-28",
+   "l": "E.F.B. Toledo",
+   "v": "C.D. Atlético Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 17,
+   "f": "2027-02-28",
+   "l": "E.F.B. Jesús de la Ossa",
+   "v": "C.D. Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 18,
+   "f": "2027-03-07",
+   "l": "E.F. C.D. Salesianos",
+   "v": "E.M.F. Azuqueca de Henares \"A\"",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 18,
+   "f": "2027-03-07",
+   "l": "C.D. San José Obrero",
+   "v": "Dinamo Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 18,
+   "f": "2027-03-07",
+   "l": "E.F.B. Conquense",
+   "v": "Academia Albiceleste",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 18,
+   "f": "2027-03-07",
+   "l": "E.M.F. Alovera",
+   "v": "Escuela de Fútbol Futbcuenca",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 18,
+   "f": "2027-03-07",
+   "l": "C.D. Atlético Guadalajara",
+   "v": "C.D. Ciudad Encantada",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 18,
+   "f": "2027-03-07",
+   "l": "C.D. Guadalajara",
+   "v": "E.F.B. Toledo",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 18,
+   "f": "2027-03-07",
+   "l": "E.F.B. Jesús de la Ossa",
+   "v": "Sp. Cabanillas",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 19,
+   "f": "2027-03-14",
+   "l": "Sp. Cabanillas",
+   "v": "E.F. C.D. Salesianos",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 19,
+   "f": "2027-03-14",
+   "l": "E.M.F. Azuqueca de Henares \"A\"",
+   "v": "C.D. San José Obrero",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 19,
+   "f": "2027-03-14",
+   "l": "Dinamo Guadalajara",
+   "v": "E.F.B. Conquense",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 19,
+   "f": "2027-03-14",
+   "l": "Academia Albiceleste",
+   "v": "E.M.F. Alovera",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 19,
+   "f": "2027-03-14",
+   "l": "Escuela de Fútbol Futbcuenca",
+   "v": "C.D. Atlético Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 19,
+   "f": "2027-03-14",
+   "l": "C.D. Ciudad Encantada",
+   "v": "C.D. Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 19,
+   "f": "2027-03-14",
+   "l": "E.F.B. Toledo",
+   "v": "E.F.B. Jesús de la Ossa",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 20,
+   "f": "2027-03-21",
+   "l": "C.D. San José Obrero",
+   "v": "E.F. C.D. Salesianos",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 20,
+   "f": "2027-03-21",
+   "l": "E.F.B. Conquense",
+   "v": "E.M.F. Azuqueca de Henares \"A\"",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 20,
+   "f": "2027-03-21",
+   "l": "E.M.F. Alovera",
+   "v": "Dinamo Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 20,
+   "f": "2027-03-21",
+   "l": "C.D. Atlético Guadalajara",
+   "v": "Academia Albiceleste",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 20,
+   "f": "2027-03-21",
+   "l": "C.D. Guadalajara",
+   "v": "Escuela de Fútbol Futbcuenca",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 20,
+   "f": "2027-03-21",
+   "l": "E.F.B. Jesús de la Ossa",
+   "v": "C.D. Ciudad Encantada",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 20,
+   "f": "2027-03-21",
+   "l": "E.F.B. Toledo",
+   "v": "Sp. Cabanillas",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 21,
+   "f": "2027-04-04",
+   "l": "Sp. Cabanillas",
+   "v": "C.D. San José Obrero",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 21,
+   "f": "2027-04-04",
+   "l": "E.F. C.D. Salesianos",
+   "v": "E.F.B. Conquense",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 21,
+   "f": "2027-04-04",
+   "l": "E.M.F. Azuqueca de Henares \"A\"",
+   "v": "E.M.F. Alovera",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 21,
+   "f": "2027-04-04",
+   "l": "Dinamo Guadalajara",
+   "v": "C.D. Atlético Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 21,
+   "f": "2027-04-04",
+   "l": "Academia Albiceleste",
+   "v": "C.D. Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 21,
+   "f": "2027-04-04",
+   "l": "Escuela de Fútbol Futbcuenca",
+   "v": "E.F.B. Jesús de la Ossa",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 21,
+   "f": "2027-04-04",
+   "l": "C.D. Ciudad Encantada",
+   "v": "E.F.B. Toledo",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 22,
+   "f": "2027-04-11",
+   "l": "E.F.B. Conquense",
+   "v": "C.D. San José Obrero",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 22,
+   "f": "2027-04-11",
+   "l": "E.M.F. Alovera",
+   "v": "E.F. C.D. Salesianos",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 22,
+   "f": "2027-04-11",
+   "l": "C.D. Atlético Guadalajara",
+   "v": "E.M.F. Azuqueca de Henares \"A\"",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 22,
+   "f": "2027-04-11",
+   "l": "C.D. Guadalajara",
+   "v": "Dinamo Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 22,
+   "f": "2027-04-11",
+   "l": "E.F.B. Jesús de la Ossa",
+   "v": "Academia Albiceleste",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 22,
+   "f": "2027-04-11",
+   "l": "E.F.B. Toledo",
+   "v": "Escuela de Fútbol Futbcuenca",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 22,
+   "f": "2027-04-11",
+   "l": "C.D. Ciudad Encantada",
+   "v": "Sp. Cabanillas",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 23,
+   "f": "2027-04-18",
+   "l": "Sp. Cabanillas",
+   "v": "E.F.B. Conquense",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 23,
+   "f": "2027-04-18",
+   "l": "C.D. San José Obrero",
+   "v": "E.M.F. Alovera",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 23,
+   "f": "2027-04-18",
+   "l": "E.F. C.D. Salesianos",
+   "v": "C.D. Atlético Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 23,
+   "f": "2027-04-18",
+   "l": "E.M.F. Azuqueca de Henares \"A\"",
+   "v": "C.D. Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 23,
+   "f": "2027-04-18",
+   "l": "Dinamo Guadalajara",
+   "v": "E.F.B. Jesús de la Ossa",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 23,
+   "f": "2027-04-18",
+   "l": "Academia Albiceleste",
+   "v": "E.F.B. Toledo",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 23,
+   "f": "2027-04-18",
+   "l": "Escuela de Fútbol Futbcuenca",
+   "v": "C.D. Ciudad Encantada",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 24,
+   "f": "2027-04-25",
+   "l": "E.M.F. Alovera",
+   "v": "E.F.B. Conquense",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 24,
+   "f": "2027-04-25",
+   "l": "C.D. Atlético Guadalajara",
+   "v": "C.D. San José Obrero",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 24,
+   "f": "2027-04-25",
+   "l": "C.D. Guadalajara",
+   "v": "E.F. C.D. Salesianos",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 24,
+   "f": "2027-04-25",
+   "l": "E.F.B. Jesús de la Ossa",
+   "v": "E.M.F. Azuqueca de Henares \"A\"",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 24,
+   "f": "2027-04-25",
+   "l": "E.F.B. Toledo",
+   "v": "Dinamo Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 24,
+   "f": "2027-04-25",
+   "l": "C.D. Ciudad Encantada",
+   "v": "Academia Albiceleste",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 24,
+   "f": "2027-04-25",
+   "l": "Escuela de Fútbol Futbcuenca",
+   "v": "Sp. Cabanillas",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 25,
+   "f": "2027-05-02",
+   "l": "E.M.F. Alovera",
+   "v": "Sp. Cabanillas",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 25,
+   "f": "2027-05-02",
+   "l": "E.F.B. Conquense",
+   "v": "C.D. Atlético Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 25,
+   "f": "2027-05-02",
+   "l": "C.D. San José Obrero",
+   "v": "C.D. Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 25,
+   "f": "2027-05-02",
+   "l": "E.F. C.D. Salesianos",
+   "v": "E.F.B. Jesús de la Ossa",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 25,
+   "f": "2027-05-02",
+   "l": "E.M.F. Azuqueca de Henares \"A\"",
+   "v": "E.F.B. Toledo",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 25,
+   "f": "2027-05-02",
+   "l": "Dinamo Guadalajara",
+   "v": "C.D. Ciudad Encantada",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 25,
+   "f": "2027-05-02",
+   "l": "Academia Albiceleste",
+   "v": "Escuela de Fútbol Futbcuenca",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 26,
+   "f": "2027-05-09",
+   "l": "C.D. Atlético Guadalajara",
+   "v": "E.M.F. Alovera",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 26,
+   "f": "2027-05-09",
+   "l": "C.D. Guadalajara",
+   "v": "E.F.B. Conquense",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 26,
+   "f": "2027-05-09",
+   "l": "E.F.B. Jesús de la Ossa",
+   "v": "C.D. San José Obrero",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 26,
+   "f": "2027-05-09",
+   "l": "E.F.B. Toledo",
+   "v": "E.F. C.D. Salesianos",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 26,
+   "f": "2027-05-09",
+   "l": "C.D. Ciudad Encantada",
+   "v": "E.M.F. Azuqueca de Henares \"A\"",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 26,
+   "f": "2027-05-09",
+   "l": "Escuela de Fútbol Futbcuenca",
+   "v": "Dinamo Guadalajara",
+   "gl": null,
+   "gv": null
+  },
+  {
+   "j": 26,
+   "f": "2027-05-09",
+   "l": "Sp. Cabanillas",
+   "v": "Academia Albiceleste",
+   "gl": null,
+   "gv": null
+  }
+ ]
+}
