@@ -56,7 +56,7 @@ h2 small{font-family:var(--font-body);font-size:12px;font-weight:500;color:var(-
 .form{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px;align-items:center}
 .form .lbl{font-size:12px;color:var(--muted);margin-right:4px}
 .res{width:28px;height:28px;border-radius:6px;display:grid;place-items:center;font-family:var(--font-display);font-weight:700;font-size:16px;color:#fff}
-.res.V{background:var(--win)} .res.E{background:var(--draw)} .res.D{background:var(--loss)}
+.res.G{background:var(--win)} .res.E{background:var(--draw)} .res.P{background:var(--loss)}
 .tbl{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px}
 table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:14px}
 th,td{padding:9px 8px;text-align:center;border-bottom:1px solid var(--line);white-space:nowrap}
@@ -172,13 +172,13 @@ document.querySelector("#tabla tbody").innerHTML=tabla.map((x,i)=>`<tr class="${
 
 // Cabanillas
 const mine=DATA.filter(m=>m.l===ME||m.v===ME).sort((a,b)=>a.j-b.j);
-const res=m=>{const f=m.l===ME?m.gl:m.gv,c=m.l===ME?m.gv:m.gl;return f>c?"V":f<c?"D":"E"};
+const res=m=>{const f=m.l===ME?m.gl:m.gv,c=m.l===ME?m.gv:m.gl;return f>c?"G":f<c?"P":"E"};
 const me=tabla.find(x=>x.t===ME),pos=tabla.indexOf(me)+1;
 document.getElementById("stats").innerHTML=[
   [pos+"º","Posición"],[me.pts,"Puntos"],[`${me.g}-${me.e}-${me.p}`,"Ganados-empatados-perdidos"],[`${me.gf}:${me.gc}`,"Goles a favor : en contra"]
 ].map(([v,l])=>`<div class="stat"><b>${v}</b><span>${l}</span></div>`).join("");
 const jug=mine.filter(played);
-document.getElementById("form").innerHTML=`<span class="lbl">Últimos resultados</span>`+jug.slice(-5).map(m=>{const r=res(m);return `<span class="res ${r}" title="Jornada ${m.j}: ${r==="V"?"victoria":r==="E"?"empate":"derrota"}">${r}</span>`}).join("");
+document.getElementById("form").innerHTML=`<span class="lbl">Últimos resultados</span>`+jug.slice(-5).map(m=>{const r=res(m);return `<span class="res ${r}" title="Jornada ${m.j}: ${r==="G"?"ganado":r==="E"?"empatado":"perdido"}">${r}</span>`}).join("");
 
 const nx=mine.find(m=>!played(m));
 if(nx){const casa=nx.l===ME,ex=EXTRA[nx.j]||{};
