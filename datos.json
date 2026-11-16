@@ -1,14 +1,14 @@
 {
- "actualizado": "2026-11-11",
- "hasta_jornada": 4,
+ "actualizado": "2026-11-16",
+ "hasta_jornada": 7,
  "extra": {
-  "5": {
-   "h": "12:00",
-   "c": "San Blas (anexo 2), Cabanillas del Campo"
-  },
   "6": {
+   "h": "20:00",
+   "c": "Salesianos (campo 1) Guadalajara"
+  },
+  "7": {
    "h": "",
-   "c": "Salesianos, Guadalajara"
+   "c": "Municipal Ramiro Almendros (anexo 2) / Cabanillas del Campo"
   }
  },
  "partidos": [
@@ -238,7 +238,7 @@
   },
   {
    "j": 5,
-   "f": "2026-11-15",
+   "f": "2026-11-14",
    "l": "E.M.F. Azuqueca de Henares \"A\"",
    "v": "E.F. C.D. Salesianos",
    "gl": null,
@@ -246,27 +246,27 @@
   },
   {
    "j": 5,
-   "f": "2026-11-15",
+   "f": "2026-11-14",
    "l": "Dinamo Guadalajara",
    "v": "C.D. San José Obrero",
-   "gl": null,
-   "gv": null
+   "gl": 4,
+   "gv": 2
   },
   {
    "j": 5,
-   "f": "2026-11-15",
+   "f": "2026-11-14",
    "l": "Academia Albiceleste",
    "v": "E.F.B. Conquense",
-   "gl": null,
-   "gv": null
+   "gl": 3,
+   "gv": 5
   },
   {
    "j": 5,
    "f": "2026-11-15",
    "l": "Escuela de Fútbol Futbcuenca",
    "v": "E.M.F. Alovera",
-   "gl": null,
-   "gv": null
+   "gl": 0,
+   "gv": 1
   },
   {
    "j": 5,
@@ -289,12 +289,12 @@
    "f": "2026-11-14",
    "l": "Sp. Cabanillas",
    "v": "E.F.B. Jesús de la Ossa",
-   "gl": null,
-   "gv": null
+   "gl": 6,
+   "gv": 4
   },
   {
    "j": 6,
-   "f": "2026-11-22",
+   "f": "2026-11-20",
    "l": "E.F. C.D. Salesianos",
    "v": "Sp. Cabanillas",
    "gl": null,
@@ -329,12 +329,12 @@
    "f": "2026-11-22",
    "l": "C.D. Atlético Guadalajara",
    "v": "Escuela de Fútbol Futbcuenca",
-   "gl": null,
-   "gv": null
+   "gl": 1,
+   "gv": 0
   },
   {
    "j": 6,
-   "f": "2026-11-22",
+   "f": "2026-11-21",
    "l": "C.D. Guadalajara",
    "v": "C.D. Ciudad Encantada",
    "gl": null,
@@ -385,8 +385,8 @@
    "f": "2026-11-29",
    "l": "Escuela de Fútbol Futbcuenca",
    "v": "C.D. Guadalajara",
-   "gl": null,
-   "gv": null
+   "gl": 0,
+   "gv": 1
   },
   {
    "j": 7,
