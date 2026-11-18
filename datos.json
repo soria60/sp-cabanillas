@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-16",
+ "actualizado": "2026-11-18",
  "hasta_jornada": 7,
  "extra": {
   "6": {
@@ -241,8 +241,8 @@
    "f": "2026-11-14",
    "l": "E.M.F. Azuqueca de Henares \"A\"",
    "v": "E.F. C.D. Salesianos",
-   "gl": null,
-   "gv": null
+   "gl": 2,
+   "gv": 1
   },
   {
    "j": 5,
@@ -273,8 +273,8 @@
    "f": "2026-11-15",
    "l": "C.D. Ciudad Encantada",
    "v": "C.D. Atlético Guadalajara",
-   "gl": null,
-   "gv": null
+   "gl": 3,
+   "gv": 2
   },
   {
    "j": 5,
@@ -302,7 +302,7 @@
   },
   {
    "j": 6,
-   "f": "2026-11-22",
+   "f": "2026-11-21",
    "l": "C.D. San José Obrero",
    "v": "E.M.F. Azuqueca de Henares \"A\"",
    "gl": null,
