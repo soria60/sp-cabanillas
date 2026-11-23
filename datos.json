@@ -1,14 +1,14 @@
 {
- "actualizado": "2026-11-18",
- "hasta_jornada": 7,
+ "actualizado": "2026-11-23",
+ "hasta_jornada": 8,
  "extra": {
-  "6": {
-   "h": "20:00",
-   "c": "Salesianos (campo 1) Guadalajara"
-  },
   "7": {
    "h": "",
    "c": "Municipal Ramiro Almendros (anexo 2) / Cabanillas del Campo"
+  },
+  "8": {
+   "h": "",
+   "c": "Obispo Laplana (Campo 1)"
   }
  },
  "partidos": [
@@ -297,32 +297,32 @@
    "f": "2026-11-20",
    "l": "E.F. C.D. Salesianos",
    "v": "Sp. Cabanillas",
-   "gl": null,
-   "gv": null
+   "gl": 5,
+   "gv": 3
   },
   {
    "j": 6,
    "f": "2026-11-21",
    "l": "C.D. San José Obrero",
    "v": "E.M.F. Azuqueca de Henares \"A\"",
-   "gl": null,
-   "gv": null
+   "gl": 2,
+   "gv": 10
   },
   {
    "j": 6,
    "f": "2026-11-22",
    "l": "E.F.B. Conquense",
    "v": "Dinamo Guadalajara",
-   "gl": null,
-   "gv": null
+   "gl": 14,
+   "gv": 3
   },
   {
    "j": 6,
    "f": "2026-11-22",
    "l": "E.M.F. Alovera",
    "v": "Academia Albiceleste",
-   "gl": null,
-   "gv": null
+   "gl": 5,
+   "gv": 0
   },
   {
    "j": 6,
@@ -337,16 +337,16 @@
    "f": "2026-11-21",
    "l": "C.D. Guadalajara",
    "v": "C.D. Ciudad Encantada",
-   "gl": null,
-   "gv": null
+   "gl": 2,
+   "gv": 2
   },
   {
    "j": 6,
    "f": "2026-11-22",
    "l": "E.F.B. Jesús de la Ossa",
    "v": "E.F.B. Toledo",
-   "gl": null,
-   "gv": null
+   "gl": 2,
+   "gv": 4
   },
   {
    "j": 7,
@@ -366,7 +366,7 @@
   },
   {
    "j": 7,
-   "f": "2026-11-29",
+   "f": "2026-11-28",
    "l": "Dinamo Guadalajara",
    "v": "E.M.F. Alovera",
    "gl": null,
@@ -449,8 +449,8 @@
    "f": "2026-12-06",
    "l": "E.F.B. Jesús de la Ossa",
    "v": "Escuela de Fútbol Futbcuenca",
-   "gl": null,
-   "gv": null
+   "gl": 1,
+   "gv": 0
   },
   {
    "j": 8,
