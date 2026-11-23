@@ -1,6 +1,6 @@
 {
  "actualizado": "2026-11-23",
- "hasta_jornada": 8,
+ "hasta_jornada": 6,
  "extra": {
   "7": {
    "h": "",
@@ -385,8 +385,8 @@
    "f": "2026-11-29",
    "l": "Escuela de Fútbol Futbcuenca",
    "v": "C.D. Guadalajara",
-   "gl": 0,
-   "gv": 1
+   "gl": null,
+   "gv": null
   },
   {
    "j": 7,
@@ -449,8 +449,8 @@
    "f": "2026-12-06",
    "l": "E.F.B. Jesús de la Ossa",
    "v": "Escuela de Fútbol Futbcuenca",
-   "gl": 1,
-   "gv": 0
+   "gl": null,
+   "gv": null
   },
   {
    "j": 8,

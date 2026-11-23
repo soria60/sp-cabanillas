@@ -49,7 +49,13 @@ def main():
             f = fecha_iso(e["fecha"])
             if p["f"] != f:
                 p["f"] = f
-        if e.get("marcador"):
+        if p["f"] > hoy:
+            # jornada aún no disputada: la federación publica de antemano el 1-0/0-1
+            # de los partidos contra equipos retirados; no se cuentan hasta su fecha
+            if p.get("gl") is not None:
+                cambios.append(f"J{p['j']}: {p['l']} - {p['v']} (se quita {p['gl']}-{p['gv']}: aún no se ha jugado)")
+                p["gl"], p["gv"] = None, None
+        elif e.get("marcador"):
             gl, gv = (int(x) for x in e["marcador"].split("-"))
             if (p.get("gl"), p.get("gv")) != (gl, gv):
                 antes = "" if p.get("gl") is None else f" (antes {p['gl']}-{p['gv']})"
@@ -110,9 +116,8 @@ def actualizar_excel(datos):
             print("AVISO: fila de Excel no encontrada para", p["j"], p["l"], p["v"])
             continue
         ws.cell(row=r, column=2).value = datetime.strptime(p["f"], "%Y-%m-%d")
-        if p.get("gl") is not None:
-            ws.cell(row=r, column=4).value = p["gl"]
-            ws.cell(row=r, column=5).value = p["gv"]
+        ws.cell(row=r, column=4).value = p.get("gl")
+        ws.cell(row=r, column=5).value = p.get("gv")
     wb.save(EXCEL)
 
 
