@@ -1,9 +1,9 @@
 {
- "actualizado": "2026-11-23",
+ "actualizado": "2026-11-25",
  "hasta_jornada": 6,
  "extra": {
   "7": {
-   "h": "",
+   "h": "11:00",
    "c": "Municipal Ramiro Almendros (anexo 2) / Cabanillas del Campo"
   },
   "8": {
@@ -358,7 +358,7 @@
   },
   {
    "j": 7,
-   "f": "2026-11-29",
+   "f": "2026-11-28",
    "l": "E.M.F. Azuqueca de Henares \"A\"",
    "v": "E.F.B. Conquense",
    "gl": null,
@@ -374,7 +374,7 @@
   },
   {
    "j": 7,
-   "f": "2026-11-29",
+   "f": "2026-11-28",
    "l": "Academia Albiceleste",
    "v": "C.D. Atlético Guadalajara",
    "gl": null,
@@ -398,7 +398,7 @@
   },
   {
    "j": 7,
-   "f": "2026-11-29",
+   "f": "2026-11-28",
    "l": "Sp. Cabanillas",
    "v": "E.F.B. Toledo",
    "gl": null,

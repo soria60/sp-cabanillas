@@ -48,6 +48,7 @@ def main():
         if e.get("fecha"):
             f = fecha_iso(e["fecha"])
             if p["f"] != f:
+                cambios.append(f"J{p['j']}: {p['l']} - {p['v']} cambia de fecha ({p['f']} -> {f})")
                 p["f"] = f
         if p["f"] > hoy:
             # jornada aún no disputada: la federación publica de antemano el 1-0/0-1
@@ -66,6 +67,7 @@ def main():
         if YO in (p["l"], p["v"]) and p.get("gl") is None:
             nuevo = {"h": e.get("hora", ""), "c": e.get("campo", "")}
             if (nuevo["h"] or nuevo["c"]) and extra.get(str(p["j"])) != nuevo:
+                cambios.append(f"J{p['j']}: {p['l']} - {p['v']} hora/campo: {nuevo['h'] or 'sin hora'}, {nuevo['c'] or 'sin campo'}")
                 extra[str(p["j"])] = nuevo
 
     # limpiar datos de hora/campo de partidos ya jugados
